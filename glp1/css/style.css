@@ -97,7 +97,7 @@ html {
   width: 150px;
 }
 
-/* QRコードの配置（右側） */
+/* QRコードの配置（右側） 
 .qr-code {
   position: absolute;
   right: 5%;
@@ -113,7 +113,7 @@ html {
 
 .qr-code img {
   width: 150px;
-}
+}*/
 
 /* メインコンテンツ（中央固定） */
 .container{
