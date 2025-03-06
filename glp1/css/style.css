@@ -353,7 +353,7 @@ html {
         max-width: 1000px; } }*/
   .header__heading {
     margin: 0 auto;
-    padding: .6rem 0; 
+    /*padding: .6rem 0;*/ 
     display: flex;}
     .header__heading img {
       width: auto;
@@ -460,7 +460,7 @@ html {
         display: block; }
       .header__heading {
         margin: 0;
-        padding: .6rem 0 .6rem 1rem; } }
+        /*padding: .6rem 0 .6rem 1rem;*/ } }
 
 @keyframes navToggleCenter {
   0% {
