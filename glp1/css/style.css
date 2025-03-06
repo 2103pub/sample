@@ -357,7 +357,7 @@ html {
     display: flex;}
     .header__heading img {
       width: auto;
-      height: 2.8rem; }
+      /*height: 2.8rem;*/ }
   .header__nav {
     transition: all .2s ease-in-out;
     background: #FFFBEC;
