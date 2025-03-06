@@ -1,7 +1,7 @@
+AuthType Basic
 AuthUserFile /2103pub.github.io/sample/glp1/.htpasswd
 AuthGroupFile /dev/null
 AuthName "Input ID and Password."
-AuthType Basic
 require valid-user
 &lt;Files ~ "^.(htpasswd|htaccess)$">
   deny from all
