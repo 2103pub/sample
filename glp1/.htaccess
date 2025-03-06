@@ -1,4 +1,4 @@
-AuthUserFile /2103pub.github.io/sample/glp1/html/.htpasswd
+AuthUserFile /2103pub.github.io/sample/glp1/.htpasswd
 AuthGroupFile /dev/null
 AuthName "Input ID and Password."
 AuthType Basic
