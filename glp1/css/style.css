@@ -925,6 +925,9 @@ html {
           .section11-image {
             margin-bottom: 20px; /* 余白のサイズを調整 */
         }
+        .block11{
+          background-color: #FFFBEC	
+          }
         .section-with-background {
           background-color: #EAF0F1; /* 背景色を指定 */
           padding: 10px; /* セクション内の余白を指定 */
