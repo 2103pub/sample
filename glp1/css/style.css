@@ -1181,6 +1181,8 @@ html {
 /* Q アイコン */
 .faq-icon {
   background: url(public/images/question_icon.svg) no-repeat;
+  width: 36px;
+  height: 36px;
    /*transform: translateX(10px);
   text-align:justify; 
   /* background: #2D6CB9; */
@@ -1272,18 +1274,10 @@ hr {
 }
 
 /* A のデザイン */
-.faq-answer-header {
-  transform: translateX(10px);
-  /* text-align:justify; */
-  width: 99px;
-  height: 54px;
-  /*background: #F4A21D;
-  color: white;
-  font-weight: bold;
-  padding: 6px 10px;
-  margin: 10px;
-  border-radius: 50%;
-  font-size: 14px;*/
+.faq-answer-header {  
+  background: url(public/images/answer_icon.svg) no-repeat;
+  width: 36px;
+  height: 36px;
 }
 
 /* アコーディオンを開いた時 */
