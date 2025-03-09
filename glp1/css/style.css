@@ -1181,15 +1181,15 @@ html {
 /* Q アイコン */
 .faq-icon {
   transform: translateX(10px);
-  text-align:justify;
-  background: #2D6CB9;
-  width: 36px;
+  /* text-align:justify; */
+  /* background: #2D6CB9; */
+  width: 54px;
   height: 36px;
-  color: white;
-  font-weight: bold;
+  /* color: white; */
+  /* font-weight: bold; */
   padding: 5px 10px;
-  border-radius: 50%;
-  font-size: 14px;
+  /* border-radius: 50%; */
+  /* font-size: 14px; */
 }
 
 /* 開閉アイコン（+ / -）*/
@@ -1273,13 +1273,16 @@ hr {
 /* A のデザイン */
 .faq-answer-header {
   transform: translateX(10px);
-  background: #F4A21D;
+  /* text-align:justify; */
+  width: 99px;
+  height: 54px;
+  /*background: #F4A21D;
   color: white;
   font-weight: bold;
   padding: 6px 10px;
   margin: 10px;
   border-radius: 50%;
-  font-size: 14px;;
+  font-size: 14px;*/
 }
 
 /* アコーディオンを開いた時 */
