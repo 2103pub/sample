@@ -85,20 +85,14 @@ function slideshow5(){
 }
 document.addEventListener("DOMContentLoaded", function() {
     const faqItems = document.querySelectorAll(".faq-item");
-
     faqItems.forEach(item => {
         item.addEventListener("click", function() {
-            // すでに開いているものを閉じる
-            faqItems.forEach(faq => {
-                if (faq !== item) {
-                    faq.classList.remove("active");
-                }
-            });
             // クリックしたものを開閉
             item.classList.toggle("active");
         });
     });
 });
+
 
 $(function () {
     // ウィンドウをスクロールしたら…
