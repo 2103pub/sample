@@ -1180,14 +1180,15 @@ html {
 }
 /* Q アイコン */
 .faq-icon {
-  transform: translateX(10px);
-  /* text-align:justify; */
+  background: url(public/images/question_icon.svg) no-repeat;
+   /*transform: translateX(10px);
+  text-align:justify; 
   /* background: #2D6CB9; */
-  width: 54px;
-  height: 36px;
+  /*width: 54px;
+  height: 36px; */
   /* color: white; */
   /* font-weight: bold; */
-  padding: 5px 10px;
+  /*padding: 5px 10px; */
   /* border-radius: 50%; */
   /* font-size: 14px; */
 }
