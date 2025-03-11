@@ -130,7 +130,7 @@ html {
 }
 
 /* スマホでは PC 用背景を非表示 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 750px) {
   .pc-background {
       display: none;
   }
@@ -1573,16 +1573,60 @@ body{
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-@media(max-width: 1100px){
+@media(max-width: 750px){
   .pc-logo,
   .pc-code{
       display: none;
   }
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 750px) {
   main {
       width: 400%;
       overflow: hidden;
   }
+}
+
+
+@media(min-width:751px){
+  .sp{
+      display: none !important;
+  }
+}
+@media(max-width:750px){
+  .pc{
+      display: none !important;
+  }
+}
+/* external css: flickity.css */
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 686px;
+  height: 650px;
+  max-width: 80%;
+  margin-right: 10px;
+  background-image: url('../public/images/A.png');
+  counter-increment: gallery-cell;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+
+.gallery-cell2 {
+  width: 686px;
+  height: 650px;
+  max-width: 81%;
+  margin-right: 10px;
+  position: absolute;
+  left: 83.69% !important; 
+  background-image: url('../public/images/B.png');
+
+  counter-increment: gallery-cell;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
 }

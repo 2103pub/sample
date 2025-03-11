@@ -26,10 +26,17 @@
 <title>マンジャロ・リベルサスなら ノワール大宮クリニック｜大宮駅東口徒歩4分</title>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/swiper.css"> 
+<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+<link rel="canonical" href="https://codepen.io/desandro/pen/emjrBm">
+<meta name="viewport" content="width=device-width">
+<link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css'>
 <!-- ファビコン -->
 <link rel="icon" href="public/images/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="public/images/apple-icon-180x180.png" sizes="180x180">
@@ -37,6 +44,8 @@
 
 <!--▼js読み込み▼-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+<script>	window.console = window.console || function(t) {};  </script>
     
 <!--↓↓↓アコーディオン設定↓↓↓-->
 <script type="text/javascript">
@@ -111,11 +120,31 @@ $(this).children(".accordion_icon").addClass('active');
 			<section class="block"><img src="public/images/section6.jpg" alt="セクション1"><a href="https://lin.ee/ZH601UO"><img src="public/images/cta.png" alt="LINEで診療予約" class="absolute2"></a></section>
 			<section class="block" id="section7"><img src="public/images/section7.jpg" alt="セクション2"></section>
 			<section class="block" id="section8"><img src="public/images/section8.svg" alt="セクション3">
-		<div class="scroll-box">
-			<div class="f_area">
-				<div class="f_one"><img src="public/images/section8.png" alt=""></div>
-			</div>
+
+		<div class="price">
+			<div class="sp">
+				<div class="scroll-box">
+				<div class="f_area">
+					<div class="f_one"><img src="public/images/section8.png" alt=""></div>
+				</div>
+			</div></div>
+			<div class="pc">
+				<div class="gallery js-flickity"
+				data-flickity-options='{ "wrapAround": false,
+				"rightToLeft": false,
+				"pageDots": false
+			   }'>
+				<div class="gallery-cell"></div>
+				<div class="gallery-cell2"></div>
+			  
+			  </div>
+				<script src='//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'></script>
+					<script id="rendered-js" >
+			  // external js: flickity.pkgd.js
+			  //# sourceURL=pen.js
+				  </script></div>
 		</div>
+		
 		</picture>
 	</div>
 			<section class="block"><img src="public/images/section9.jpg" alt="セクション4"></section>

@@ -113,3 +113,29 @@ $(function () {
         });
     });
 });
+
+// 切り替えイメージ
+(function() {
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    const events = isTouchDevice ? ['click'] : ['mouseover', 'mouseout'];
+    function handleImageEvent(event) {
+        const img = event.target;
+        const [srcA, srcB] = [img.dataset.srcA, img.dataset.srcB];
+        if (event.type === 'click') {
+            img.src = img.src.includes(srcA) ? srcB : srcA;
+        } else if (event.type === 'mouseover') {
+            img.src = srcB;
+        } else if (event.type === 'mouseout') {
+            img.src = srcA;
+        }
+    }
+    document.querySelectorAll('.kirikae-img').forEach(img => {
+        events.forEach(event => img.addEventListener(event, handleImageEvent));
+    });
+})();
+
+$('.main-gallery').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+  });
