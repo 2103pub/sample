@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+html{
+font-size:62.5%;
+/* 1rem=10px */
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+body{
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal
+}
+/* 背景固定 ーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/pc_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* 背景ロゴ */
+.background_logo{
+  width: 200px; 
+  height: auto;
+}
+/*PC表示メニュー*/
+.pc_global_nav{
+
+}
+.pc_global_nav ul li{
+  list-style: none;
+}
+.pc_nav_title{
+  font-size:3.0rem;
+  text-align: center;
+  color: #fff;
+}
+.pc_global_nav ul li a{
+  text-decoration: none!important;
+  display: block;
+  padding: 0.5rem;
+  margin:  0.5rem 0;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.pc_global_nav ul li a .title_number{
+  font-size: 1.0rem;
+  padding-right:3px;
+}
+/* タイトル非表示用 */
+.visually-hidden {
+  position: absolute;           /* 通常の文脈から外す */
+  width: 1px;                   /* 極小サイズにする */
+  height: 1px;
+  margin: -1px;                 /* 表示から外す */
+  clip: rect(0, 0, 0, 0);       /* 描画領域を0に切り取る（旧式） */
+  overflow: hidden;            /* 内容を見せない */
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+/* ヘッダーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.content_wrapper header{
+  position: sticky; 
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 3px 0px rgb(0, 0, 0);
+}
+.header__logo img {
+  max-width: 100%!important;
+  height: auto;
+}
+
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+/* スクロールーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/* スクロール箱 */
+.container_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+  /* スクロール可能なエリア */  
+.content_wrapper {
+  width: 100%;
+  max-width:500px; /* スマホ最大幅 */
+  height: 100vh;
+  overflow-y: auto;
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  position: relative;
+  background-color: #ffffff;
+}
+.content_wrapper::-webkit-scrollbar{
+  display: none;
+}
+.content_inner{
+  position: relative;
+}
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+/* 下のLINE登録ボタン ーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.content_wrapper .footer_btn{
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+.footer_btn img{
+max-width: 500px;
+width: 100%;
+height: auto;
+}
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+/* メインコンテンツーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/*メインビジュアル*/
+.main_visiual_wrapper{
+  background-color: #e5dcd3;
+}
+.main_visiual img{
+  max-width: 100%;
+  height: auto;
+}
+.main_visual_btn img{
+  max-width:100%;
+  height:auto;
+}
+.sec01_wrapper,.sec02_wrapper{
+  background-color: #fff;  
+}
+/* 施術めにゅーーーーーーーーーーーーーーーーーーーーーーーーー*/
+h2#sec04{
+  width: 100%;
+  height: 100%;
+}
+.sec04_wrapper{
+  background-color: #F6EDD3;
+}
+.sec04_menu01,
+.sec04_menu02 {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width:95%;
+  margin: 0 auto;
+  width: 100%;
+  pointer-events: none;
+}
+.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  position: relative;
+}
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.sec04_table {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+.sec04_table img {
+  display: inline-block;
+  height: auto;
+  width: auto; 
+  min-width: 1024px;
+}
+/* 目元整形ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.sec05_wrapper{
+  background-color: #ffffff;
+}
+.sec05_menu01,
+.sec05_menu02 {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width:95%;
+  margin: 0 auto;
+  width: 100%;
+  pointer-events: none;
+}
+.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  position: relative;
+}
+/* スライダーーーーーーーーーーーーーーーーーーーーーー */
+.swiper-slide img {
+  width: 70%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 10;
+  width: 50px !important;
+  background-color: #bc8e319b;
+  border-radius: 50%;
+  height: 50px !important;
+}
+.sec06_wrapper{
+  background-image: url(../img/bg01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  display: none;
+}
+/* .swiper-button-prev, .swiper-rtl .swiper-button-next{
+  display: none!important;
+} */
+/* ---------------------------------- */
+/* アコーディオンーーーーーーーーーーーーー */
+
+/* ーーーーーーーーーーーーーーーーーーーーー */
+.sec07_wrapper{
+  max-height: 100%;
+  width: 100%;
+  background-color: #F6EDD3;
+}
+.sec09_wrapper #sec09{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sec10_inner{
+  position: relative;
+  max-width: 500px;
+  height: auto;
+}
+.sec10_cotent_bg{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  max-width: 500px;
+  width:90%;
+  height: auto;
+}
+.sec10_cotent{
+  position: absolute;
+  top:14%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, 0%);
+}
+.sec10_cotent h3{
+  text-align: center;
+  color: #C40003;
+  margin-bottom:10px ;
+  font-size: 20px;
+}
+.sec10_cotent p{
+  font-size: 14px;
+  margin: 5% 0;
+}
+.sec09_wrapper{
+background-image: url(../img/section10_bg.png);
+}
+
+.sec10_coten_bottom{
+  width: 100%;
+  background-image: url(../img/section10_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0; 
+}
+.sec10_coten_bottom p{
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* タブーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.sec11_panel_item{
+  margin-bottom: 20px;
+}
+.sec11_panel_item p{
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 15%;
+  width: 80%;
+  margin: 0 auto;
+}
+.sec11_panel_item .tab_title{
+  text-align: center;
+  color: #BA9B6D;
+  font-weight: 400;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 20%;
+  padding: 20px 0 10px 0;
+}
+.sec11_panel_item .tab_img{
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.copyright_box{
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+.copyright_box small{
+  font-family: Noto Serif JP;
+font-weight: 400;
+font-style: Regular;
+font-size: 10px;
+line-height: 25px;
+letter-spacing: 15%;
+}
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/* media screen ーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+@media screen and (max-width:780px) {
+  .background_logo{
+    display: none;
+  }
+  .pc_global_nav{
+    display: none;
+  }
+}
+@media screen and (max-width:400px) {
+  .sec10_cotent{
+    top:10%;
+    width: 85%;
+  }
+  .sec10_cotent p{
+    font-size:12px;
+    margin: 2% 0;
+  }
+  .sec10_cotent h3{
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+}
