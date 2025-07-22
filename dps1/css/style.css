@@ -276,18 +276,18 @@ h2#sec04{
   border-radius: 50%;
   height: 50px !important;
 }
-.swiper-wrapper{
+.sec06_wrapper{
   background-image: url(../img/bg01.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  display: none;
+}
 .swiper-slide img{
   box-shadow: 5px 2px 2px 0px rgba(0, 0, 0, 0.58);
 
-}
-.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
-  display: none;
 }
 /* .swiper-button-prev, .swiper-rtl .swiper-button-next{
   display: none!important;
