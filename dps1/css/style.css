@@ -180,7 +180,6 @@ padding-left: 10px;
 .main_visiual img{
   max-width: 100%;
   height: auto;
-  margin-top: 30px;
 }
 .main_visual_btn img{
   max-width:100%;
@@ -452,6 +451,8 @@ display: block;
   #sec11 {
     scroll-margin-top: 180px; 
   }
-}
-
+  .content_wrapper{
+   padding-top: 100px; 
+  }
+ }
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーー */
