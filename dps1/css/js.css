@@ -109,7 +109,7 @@
   .nav-morph.active .nav-morph__item:nth-child(5) { transition-delay: 0.7s; }
   .nav-morph.active .nav-morph__item:nth-child(6) { transition-delay: 0.8s; }
   .nav-morph.active .nav-morph__item:nth-child(7) { transition-delay: 0.9s; }
-  .nav-morph.active .nav-morph__item:nth-child(8) { transition-delay: 0.10s; }
+  .nav-morph.active .nav-morph__item:nth-child(8) { transition-delay: 1.0s; }
   .nav-morph.active .nav-morph__item:nth-child(9) { transition-delay: 0.11s; }
   .nav-morph.active .nav-morph__item:nth-child(10) { transition-delay: 0.12s; }
   .nav-morph.active .nav-morph__item:nth-child(11) { transition-delay: 0.13s; }
