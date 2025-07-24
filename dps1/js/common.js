@@ -182,35 +182,58 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 // アコーディオン（料金）
 document.querySelectorAll('.sec07_accordion-item').forEach((item, index) => {
-  const header = item.querySelector('.sec07_accordion-header');
-  const img = header.querySelector('img');
-  const openSrc = img.dataset.open;
-  const closeSrc = img.dataset.close;
-
-  // 初期状態：1番目だけ展開
-  if (index === 0) {
-    img.src = openSrc;
-  } else {
-    img.src = closeSrc;
-  }
-
-  header.addEventListener('click', () => {
-    const isOpen = img.src.includes(openSrc);
-
-    if (isOpen) {
-      // 閉じる → 小さい画像に戻す
-      img.src = closeSrc;
-
-      // スクロールしてタイトル位置に戻す
-      const y = header.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-
-    } else {
-      // 開く → 大きい画像に変更（他は関係なし）
-      img.src = openSrc;
-    }
+	const header = item.querySelector('.sec07_accordion-header');
+	let link = header.querySelector('a');
+	const img = header.querySelector('img');
+	const openSrc = img.dataset.open;
+	const closeSrc = img.dataset.close;
+  
+	// 初期状態設定
+	img.src = (index === 0) ? openSrc : closeSrc;
+  
+	// 1番目だけ初期でaタグ付ける（なければ作成）
+	if (index === 0 && !link) {
+	  link = document.createElement('a');
+	  link.href = '#sec07';
+	  header.insertBefore(link, img);
+	  link.appendChild(img);
+	} else if (index !== 0 && link) {
+	  // 2番目以降はaタグがあれば外す
+	  const parent = link.parentNode;
+	  parent.insertBefore(img, link);
+	  parent.removeChild(link);
+	  link = null;
+	}
+  
+	header.addEventListener('click', () => {
+	  const isOpen = img.src.includes(openSrc);
+  
+	  if (isOpen) {
+		// 閉じる処理
+		img.src = closeSrc;
+  
+		// aタグを外す（リンク解除）
+		if (link) {
+		  const parent = link.parentNode;
+		  parent.insertBefore(img, link);
+		  parent.removeChild(link);
+		  link = null;
+		}
+  
+	  } else {
+		// 開く処理
+		img.src = openSrc;
+  
+		// aタグをつける（リンク付与）
+		if (!link) {
+		  link = document.createElement('a');
+		  link.href = '#sec07';
+		  header.insertBefore(link, img);
+		  link.appendChild(img);
+		}
+	  }
+	});
   });
-});
 // アコーディオン FAQ
 $(function () {
     $('.sec09_faq_heading').on('click', function () {
