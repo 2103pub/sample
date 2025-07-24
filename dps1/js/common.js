@@ -181,38 +181,33 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
   });
 // アコーディオン（料金）
-const accordionItems = document.querySelectorAll('.sec07_accordion-item');
-
-accordionItems.forEach(item => {
+document.querySelectorAll('.sec07_accordion-item').forEach((item, index) => {
   const header = item.querySelector('.sec07_accordion-header');
   const img = header.querySelector('img');
-  const body = item.querySelector('.sec07_accordion-body');
+  const openSrc = img.dataset.open;
+  const closeSrc = img.dataset.close;
+
+  // 初期状態：1番目だけ展開
+  if (index === 0) {
+    img.src = openSrc;
+  } else {
+    img.src = closeSrc;
+  }
 
   header.addEventListener('click', () => {
-    const isOpen = item.classList.contains('active');
+    const isOpen = img.src.includes(openSrc);
 
-    // すべて閉じる
-    accordionItems.forEach(i => {
-      i.classList.remove('active');
-      const b = i.querySelector('.sec07_accordion-body');
-      b.style.maxHeight = null;
-      b.style.opacity = 0;
+    if (isOpen) {
+      // 閉じる → 小さい画像に戻す
+      img.src = closeSrc;
 
-      const iImg = i.querySelector('img');
-      if (iImg && iImg.dataset.close) {
-        iImg.src = iImg.dataset.close;
-      }
-    });
+      // スクロールしてタイトル位置に戻す
+      const y = header.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: y, behavior: 'smooth' });
 
-    // クリックしたのが閉じてたら開く
-    if (!isOpen) {
-      item.classList.add('active');
-      body.style.maxHeight = body.scrollHeight + 'px';
-      body.style.opacity = 1;
-
-      if (img && img.dataset.open) {
-        img.src = img.dataset.open;
-      }
+    } else {
+      // 開く → 大きい画像に変更（他は関係なし）
+      img.src = openSrc;
     }
   });
 });
