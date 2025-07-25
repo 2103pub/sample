@@ -275,10 +275,6 @@ h2#sec04{
   margin: 0 auto;
 }
 /* スライダ(Dr.紹介)ーーーーーーーーーーーーーーーーーーーーーー */
-.title06{
-  width: 90%;
-  margin: 10px auto;
-}
 .swiper-slide img {
   width: 70%;
   height: auto;
