@@ -132,7 +132,6 @@ padding-left: 10px;
   position: relative;
 }
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-
 /* 下のCTAボタン ーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 .content_wrapper .footer_btn {
   position: fixed;
@@ -148,20 +147,20 @@ padding-left: 10px;
 .footer_btn_wrapper{
   width: 500px;
 }
-.footer_btn{
+.footer_btn,.main_visiual_btn{
   display: flex;
   background-color: #ffffffd7;
   padding: 10px;
   box-sizing: border-box;
 }
-.footer_btn a{
+.footer_btn a,.main_visiual_btn a{
   width: 100%;
   height: auto;
   display: block;
   margin: 0 7px;
   box-sizing: border-box;
 }
-.footer_btn img {
+.footer_btn img,.main_visiual_btn img{
   width: 100%;
   height: auto;
   box-shadow: 1px 1px #6a6a6a;
