@@ -373,6 +373,9 @@ text-align: center;
 }
 
 /* タブーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.sec11_tab_list{
+background-color: #000;
+}
 .sec11_panel_item{
   margin-bottom: 20px;
 }
