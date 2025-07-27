@@ -173,22 +173,19 @@
   .sec11_tab_item:hover,
   .sec11_tab_item.is-active {
     color: #99743C;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.16) 30.29%, rgba(0, 0, 0, 0) 60.58%, rgba(0, 0, 0, 0.16) 100%);
+    background: #000;
     
-  }
-  .sec11_tab_item:first-child:hover,
+  } 
   .sec11_tab_item:first-child.is-active {
     background: linear-gradient(270deg, #F8D7A2 3.41%, #FFFDDF 26.47%, #F8D7A2 43.76%, #EBD78E 60.09%, #FFF5DD 81.7%, #EBD78E 98.99%),
 linear-gradient(0deg, rgba(203, 180, 130, 0.44), rgba(203, 180, 130, 0.44));
 
   }
-  .sec11_tab_item:nth-child(2):hover,
   .sec11_tab_item:nth-child(2).is-active {
     background: linear-gradient(270deg, #F8D7A2 3.41%, #FFFDDF 26.47%, #F8D7A2 43.76%, #EBD78E 60.09%, #FFF5DD 81.7%, #EBD78E 98.99%),
 linear-gradient(0deg, rgba(203, 180, 130, 0.44), rgba(203, 180, 130, 0.44));
 
   }
-  .sec11_tab_item:nth-child(3):hover,
   .sec11_tab_item:nth-child(3).is-active {
     background: linear-gradient(270deg, #F8D7A2 3.41%, #FFFDDF 26.47%, #F8D7A2 43.76%, #EBD78E 60.09%, #FFF5DD 81.7%, #EBD78E 98.99%),
 linear-gradient(0deg, rgba(203, 180, 130, 0.44), rgba(203, 180, 130, 0.44));
