@@ -758,4 +758,9 @@ display: block;
     border-radius: 2.5vw;
   }
  }
+ @media screen and (max-width:400px){
+.content_wrapper{
+  padding-top:120px;
+}
+
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーー */
