@@ -412,7 +412,7 @@ padding-left: 10px;
 .sec07_wrapper{  
 background-color: #000;
 }
-.sec07_wrapper img{
+.sec07_wrapper .fade-in img{
   display:block;
 }
 /* アコーディオンーーーーーーーーーーーーー */
