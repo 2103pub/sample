@@ -760,9 +760,8 @@ display: block;
  }
  /* 400px以下 */
  @media screen and (max-width:400px){
-  .main_visiual img{
-    margin-top: 30px;
-
+  .main_visiual_wrapper {
+    margin-top: 30px; 
   }
 }
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーー */
