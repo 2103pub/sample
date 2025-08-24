@@ -758,10 +758,4 @@ display: block;
     border-radius: 2.5vw;
   }
  }
- @media screen and (max-width:400px){
-.content_wrapper{
-  padding:110px;
-}
-   
- }
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーー */
