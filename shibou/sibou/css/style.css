@@ -406,6 +406,9 @@ padding-left: 10px;
   display: none!important;
 } */
 /* ---------------------------------- */
+.sec07_wrapper{  
+background-color: #000;
+}
 /* アコーディオンーーーーーーーーーーーーー */
 .sec08_wrapper{
   max-height: 100%;
