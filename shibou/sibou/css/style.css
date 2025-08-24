@@ -758,12 +758,11 @@ display: block;
     border-radius: 2.5vw;
   }
  }
+ /* 400px以下 */
  @media screen and (max-width:400px){
-.content_wrapper{
-  padding-top:120px;
+  .main_visiual img{
+    margin-top: 10px;
+
+  }
 }
-.main_visiual img{
-     margin-top:10px;
-}
- }
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーー */
