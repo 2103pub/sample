@@ -394,6 +394,9 @@ padding-left: 10px;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.sec06_bottom img{
+  display: block;
+}
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
   display: none;
 }
@@ -409,11 +412,17 @@ padding-left: 10px;
 .sec07_wrapper{  
 background-color: #000;
 }
+.sec07_wrapper img{
+  display:block;
+}
 /* アコーディオンーーーーーーーーーーーーー */
 .sec08_wrapper{
   max-height: 100%;
   width: 100%;
   background-color: #000;
+}
+.sec08_title img{
+ display: block; 
 }
 .sec08_menu{
   background-color: #000;
