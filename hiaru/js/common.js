@@ -123,9 +123,11 @@ $(document).ready(function() {
 	$('#menu2').click(function() {
 	  toggleMenuImage($(this), 'img/menu03.webp', 'img/menu04.webp');
 	});
-  
+
+  });
+
+	
 	// $('#menu3').click(function() {
 	//   toggleMenuImage($(this), 'img/menu05.webp', 'img/menu06.webp');
 	// });
   
-  });
