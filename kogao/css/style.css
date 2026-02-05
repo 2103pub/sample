@@ -384,8 +384,8 @@ text-indent: 3rem;
  display: block; 
 }
 .sec05_menu_wrapper{
-  background-image: url(../img/section05_bg.webp);
-  background-image: linear-gradient(0deg, rgb(255 255 255), rgb(255 242 242) 10%, rgb(250 241 241) 90%, rgb(255 242 242));
+  background: #fcf1f1;
+  /* background-image: linear-gradient(0deg, rgb(255 255 255), rgb(255 242 242) 10%, rgb(250 241 241) 90%, rgb(255 242 242)); */
 }
 .sec05_menu_item #menu1,.sec05_menu_item #menu2,.sec05_menu_item #menu3,.sec05_menu_item #menu4{
   box-shadow:4px 4px 2px #00000087;
@@ -403,6 +403,10 @@ height: auto;
 opacity: 1;
 transition: opacity 0.7s ease-in-out;
 animation: fadeIn 5s;
+}
+.sec05_menu_item:last-child{
+padding-bottom: 6vh;
+
 }
 .sec05_menu_item img{
 margin:0 auto;
@@ -702,6 +706,7 @@ display: block;
   transform: translateY(20px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
