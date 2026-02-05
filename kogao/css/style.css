@@ -406,6 +406,7 @@ animation: fadeIn 5s;
 }
 .sec05_menu_item img{
 margin:0 auto;
+cursor: pointer;
 }
 
 @keyframes fadeIn {
