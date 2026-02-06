@@ -116,7 +116,7 @@ $(document).ready(function() {
 		  img.attr('src', src2);
 		} else {
 		  img.attr('src', src1);
-		  $('.content_wrapper').animate({ scrollTop: imgTop -50 }, 800);
+		  $('.content_wrapper').animate({ scrollTop: imgTop -60 }, 800);
 		}
 		img.fadeIn(500);
 	  });
